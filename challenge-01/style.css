@@ -1,0 +1,56 @@
+:root {
+  --white-color: white;
+  --golden-color: goldenrod;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: arial, sans-serif;
+  color: var(--white-color);
+}
+
+.app {
+  height: 100vh;
+  padding: 4em;
+  background: url("./images/background-image.svg");
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.key {
+  min-width: 7rem;
+  font-size: 1.6rem;
+  padding: 0.8em;
+  text-align: center;
+  border: 0.2rem solid var(--white-color);
+  transition: all 0.1s ease-in-out;
+}
+
+.key.active {
+  border: 0.2rem solid var(--golden-color);
+  box-shadow: var(--golden-color) 0px 5px 15px;
+  font-size: 1.8rem;
+}
+
+.key-letter {
+  font-size: 1em;
+}
+
+.key-sound {
+  margin-top: 0.8rem;
+  font-size: 0.6em;
+  color: var(--golden-color);
+}
